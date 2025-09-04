@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Laço Comprido - A Jornada do Laçador</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Tela inicial -->
+    <div id="start-screen">
+      <h1>Laço Comprido - A Jornada do Laçador 🤠</h1>
+      <p>Digite seu nome para começar a aventura:</p>
+      <input type="text" id="player-name" placeholder="Seu nome..." />
+      <button id="start-btn">Começar</button>
+    </div>
+
+    <!-- Quiz -->
+    <div id="quiz-screen" class="hidden">
+      <h1>A Jornada de <span id="player-display"></span> 🤠</h1>
+
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+
+      <div id="question"></div>
+      <div id="answers"></div>
+    </div>
+
+    <!-- Resultado -->
+    <div id="result-screen" class="hidden">
+      <h2>Fim da Jornada</h2>
+      <p id="final-text"></p>
+      <button id="restart-btn">Tentar Novamente</button>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
